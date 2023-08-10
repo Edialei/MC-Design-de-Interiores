@@ -211,7 +211,7 @@ b {
         margin-left: 0;
         opacity: 0;
     }
-    
+
     .mobile-menu {
         display: block;
         z-index: 150;
@@ -272,6 +272,7 @@ b {
         border-radius: 10px;
         padding: 7%;
         gap: 20px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
     }
     
     .card img {
