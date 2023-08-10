@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3;
+    color: #000;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    background: #9f885c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav img {
+    height: 120px;
+}
+
+.contato {
+    font-family:'Roboto Slab', serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    padding: 16px 20px 16px 20px;
+    background: #000;
+    color: #fff;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+.sobre-nos {
+    padding: 6%;
+    font-family:'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+}
+
+.sobre {
+    padding: 4%;
+    margin: 5%;
+    display: flex;
+    gap: 45px;
+    border: 5px solid #9f885c;
+}
+
+.sobre h1 {
+    font-family:'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 55px;
+}
+
+.sobre p {
+    font-family:'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 19px;
+    letter-spacing: 3px;
+}
+
+.sobre div {
+    padding: 0 2%;
+}
+
+.nossa-designer {
+    background-color: #9f885c;
+    padding: 7%;
+}
+
+.titulo {
+    text-align: center;
+    font-family:'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 60px;
+    padding: 4%;
+}
+
+.card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 7%;
+    gap: 50px;
+}
+
+.card img {
+    height: 400px;
+}
+
+.card h1 {
+    font-family:'Roboto Slab', serif;
+    font-weight: 700;
+}
+
+.card p {
+    font-family:'Roboto Slab', serif;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+footer {
+    background: gray;
+    text-align: center;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rodape h2{
+    font-family:'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+footer p {
+    font-family:'Roboto Slab', serif;
+    font-weight: 400;
+}
+
+footer img {
+    height: 40px;
+}
+
+b {
+    cursor: pointer;
+}
+
+@media (max-width: 999px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    background: #9f885c;
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    }
+
+    nav img {
+        height: 120px;
+    }
+
+    .contato {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 400;
+        letter-spacing: 3px;
+        padding: 16px 20px;
+        background: #000;
+        color: #fff;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #9f885c;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        z-index: 200;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    
+    .mobile-menu {
+        display: block;
+        z-index: 150;
+    }
+
+    .sobre-nos {
+        padding: 6%;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .sobre {
+        padding: 4%;
+        margin: 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border: 5px solid #9f885c;
+    }
+    
+    .sobre h1 {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 700;
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .sobre p {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    
+    .sobre div {
+        padding: 0 2%;
+    }
+
+    .nossa-designer {
+        background-color: #9f885c;
+        padding: 7%;
+    }
+    
+    .titulo {
+        text-align: center;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 700;
+        font-size: 40px;
+        padding: 4%;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 7%;
+        gap: 20px;
+    }
+    
+    .card img {
+        height: auto;
+        max-width: 100%;
+    }
+    
+    .card h1 {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .card p {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    footer {
+        background: gray;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .rodape h2 {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    footer p {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+    
+@keyframes navLinkFade {
+    from {
+    opacity: 0;
+    transform: translateX(50px);
+    }
+    to {
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+    
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+    
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+    
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
