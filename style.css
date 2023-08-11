@@ -196,21 +196,19 @@ b {
 }
 
 @media (max-width: 999px) {
-    body{
+    body {
         overflow-x: hidden;
     }
 
     nav {
-    display: flex;
-    justify-content: space-around;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 400;
-    background: #9f885c;
-    position: static;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
+        position: static;
+        display: flex;
+        justify-content: space-around;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 400;
+        background: #9f885c;
+        width: 100%;
+        z-index: 100;
     }
 
     nav img {
@@ -240,10 +238,16 @@ b {
         transition: transform 0.3s ease-in;
         z-index: 200;
     }
+
+    .nav-list:not(.active) {
+        display: none; 
+    }
+
     .nav-list li {
         margin-left: 0;
         opacity: 0;
     }
+
     .mobile-menu {
         display: block;
         z-index: 150;
