@@ -212,7 +212,7 @@ b {
     nav {
         position: static;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         font-family: 'Roboto Slab', serif;
         font-weight: 400;
         background: #9f885c;
@@ -241,7 +241,7 @@ b {
         background: #9f885c;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
         z-index: 200;
