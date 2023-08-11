@@ -35,6 +35,15 @@ nav img {
 .contato {
     font-family:'Roboto Slab', serif;
     font-weight: 400;
+    padding: 0 0 2px 0;
+    border-bottom: solid 3px #000;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.contato-proposta {
+    font-family:'Roboto Slab', serif;
+    font-weight: 400;
     letter-spacing: 3px;
     padding: 16px 20px 16px 20px;
     background: #000;
@@ -218,9 +227,8 @@ b {
     .contato {
         font-family: 'Roboto Slab', serif;
         font-weight: 400;
-        letter-spacing: 3px;
-        padding: 16px 20px;
-        background: #000;
+        letter-spacing: 2px;
+        font-size: 14px; 
         color: #fff;
     }
 
