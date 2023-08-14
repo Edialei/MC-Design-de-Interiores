@@ -143,6 +143,7 @@ b {
         background: #9f885c;
         width: 100%;
         z-index: 100;
+        align-items: center;
     }
 
     nav img {
@@ -159,7 +160,7 @@ b {
 
     .nav-list {
         position: absolute;
-        top: 8vh;
+        top: 11vh;
         right: 0;
         width: 50vw;
         height: 92vh;
